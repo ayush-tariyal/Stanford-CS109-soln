@@ -76,7 +76,7 @@ def argmax(product_lst):
 
 
 # returns the predicted output
-# log sum only works for MAP or when params != 0
+# log sum works when params != 0
 def predictingOutput(test_list, params_lst, probY_list):
     print("predicting output.....")
     result_list = []
@@ -122,7 +122,7 @@ def checkAccuracy(predicted_list, test_list):
 
 train_list = txtToNpList(r"pset6\simple-train.txt")
 test_list = txtToNpList(r"pset6\simple-test.txt")
-# print(test_list)
+# print(train_list)
 params = calculatingParameters(train_list, "MAP")
 # print(params)
 prediction = predictingOutput(test_list, params, probY(train_list, "MAP"))
