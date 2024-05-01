@@ -116,7 +116,7 @@ def checkAccuracy(predicted_list, test_list):
     class_type, class_count = np.unique(test_list, return_counts=True)
 
     print(
-        f"Class 0: tested {class_count[0]}, correctly classified {correctly_predict_0}\nClass 1: tested {class_count[1]}, correctly classified {correctly_predict_1}\nOverall: tested {class_count[0] + class_count[1]}, correctly classified {correctly_predict_0 + correctly_predict_1}\nAccuracy: {(correctly_predict_0 + correctly_predict_1)/(class_count[0] + class_count[1])}"
+        f"Class 0: tested {class_count[0]}, correctly classified {correctly_predict_0}\nClass 1: tested {class_count[1]}, correctly classified {correctly_predict_1}\nOverall: tested {class_count[0] + class_count[1]}, correctly classified {correctly_predict_0 + correctly_predict_1}\nAccuracy = {(correctly_predict_0 + correctly_predict_1)/(class_count[0] + class_count[1])}"
     )
 
 
